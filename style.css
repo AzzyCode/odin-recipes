@@ -7,6 +7,13 @@ body {
 body {
     background-image: url("images/background.jpg");
     background-size: cover;
+    z-index: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.5em;
+    color: #313840;
 }
 
 .menu {
@@ -16,7 +23,13 @@ body {
     transform: translate(-50%, -50%);
     width: 20vw;
     height: 25vw;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 25px;
     padding: 10px;
+}
+
+.menu-header {
+    text-align: center;
+    font-size: 2.5em;
+    font-style: italic;
 }
