@@ -13,18 +13,47 @@ body {
     z-index: 0;
 }
 
+body.first-recipe {
+    background-image: none;
+    background-color: whitesmoke
+}
+
 h1 {
     text-align: center;
     font-size: 4.5em;
     color: #313840;
 }
 
+table {
+    table-layout: fixed;
+    width: 60%;
+    margin: auto;
+    margin-top: 1.5em;
+}
+
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.4em;
+    width: 25%;
+    text-align: center;
+}
+
+caption{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
 .menu {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 25em;
+    width: 30em;
     height: 25em;
     background-color: whitesmoke;
     border-radius: 25px;
@@ -40,9 +69,41 @@ h1 {
 
 .recipe-link {
     font-size: 1.4em;
-    list-style-type: none;
-    margin: 2em 0;
+    list-style-type: decimal;
+    margin: 2em 0.8em;
 }
+
+#container h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#container {
+    width: 45rem;
+    margin: 3.5rem auto;
+}
+
+
+
+.recipe-image {
+    height: 30rem;
+    width: 80%;
+    margin: auto;
+    display: block;
+ }
+
+.recipe-steps,
+.ingredient-list,
+.content {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.content{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 
 a:link,
 a:visited {
